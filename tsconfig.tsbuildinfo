@@ -1,0 +1,1 @@
+{"root":["./src/app.ts","./src/server.ts","./src/config/env.ts","./src/config/prisma.ts","./src/controllers/auth.controller.ts","./src/controllers/booking.controller.ts","./src/middlewares/auth.middleware.ts","./src/routes/auth.routes.ts","./src/routes/booking.routes.ts"],"version":"5.9.3"}

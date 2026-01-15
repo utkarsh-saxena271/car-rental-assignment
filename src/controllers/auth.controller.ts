@@ -27,7 +27,7 @@ export const signupController = async (req: Request, res: Response) => {
 
         const user = await prisma.user.create({ data: { username, password: hashpass } })
         if (user) {
-            return res.status(200).json({
+            return res.status(201).json({
                 success:true,
                 data:{message: "user created successfully",
                 userId: user.id}
@@ -69,7 +69,7 @@ export const loginController = async (req: Request, res: Response) => {
             expiresIn: "7d"
         })
 
-        return res.status(201).json({
+        return res.status(200).json({
             success: true,
             data: {
                 message: "Login successful",

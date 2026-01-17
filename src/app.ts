@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 // routes
-app.use('/api/auth', authRoutes)
-app.use('/api/bookings',bookingRoutes)
+app.use('/auth', authRoutes)
+app.use('/bookings',bookingRoutes)
 
 
 
